@@ -1,0 +1,70 @@
+body {
+	margin: 0;
+	/*background: url("http://andrewnyland.net/about/_MG_1502.jpg") left bottom no-repeat #5C1045;
+	background-size: cover;*/
+	background: #5C1045;
+}
+h1 {
+	font-family: 'Space Mono', Georgia;
+	color: #EEE;
+	font-size: 4em;
+	font-weight: normal;
+	text-transform: uppercase;
+	text-align: center;
+	background: #5C1045;
+}
+h2 {
+	font-family: "Open Sans", Marion, sans-serif;
+	border-bottom: 1px solid #444;
+}
+.head-part {
+	display: inline-block;
+	padding: .2em 1em;
+	margin: 0 4%;
+	background: #202;
+}
+ul#home {
+	list-style-type: none;
+	display: block;
+	margin: 0;
+	padding: 0;
+	/*max-width: 960px;*/
+	width: 100%;
+	text-align: center;
+	-webkit-transition: all .7s ease;
+	transition: all .7s ease;
+}
+/*right 1/2*/
+ul#home.go-1 {
+	width: 30%;
+	margin: 0 0 0 70%;
+}
+/*left 1/2*/
+ul#home.go-0 {
+	width: 30%;
+	margin: 0 70% 0 0;
+}
+li.home {
+	width: 80%;
+	max-width: 360px;
+	background: #121;
+	color: #CCC;
+	margin: .5em 0 1em 0;
+	padding: 0 5%;
+	display: inline-block;
+	text-align: left;
+	font-family: "Open Sans", marion, sans-serif;
+}
+li.home p {
+	margin: 1em 0;
+}
+.home a {
+	color: #777;
+	font-weight: bold;
+}
+.home a:hover {
+	color: inherit;
+}
+#home .home.active {
+	background: black;
+}

@@ -1,0 +1,294 @@
+body {
+	margin: 0;
+	/*background: url("http://andrewnyland.net/about/_MG_1502.jpg") left bottom no-repeat #5C1045;
+	background-size: cover;*/
+	background: #5C1045;
+	min-height: 800px;
+	font-family: "Open Sans", sans-serif;
+}
+.axis {}
+body.initial li.home div.tmp {
+	line-height: 2em;
+	margin: 1em 0;
+}
+.photography {}
+.webdesign {}
+.programming {}
+.resume {}
+.contact {}
+.resume a.head-part {
+    color: black;
+}
+.resume h1 {text-transform: capitalize;}
+.date {
+	float: right;
+}
+h1 {
+	font-family: 'Space Mono', Georgia;
+	color: #EEE;
+	font-size: 4em;
+	font-weight: normal;
+	margin: 0.4em 0;
+	text-transform: uppercase;
+	text-align: center;
+	-webkit-transition: all .3s ease;
+	transition: all .3s ease;
+	z-index: 1;
+}
+.initial h1 {
+	margin: 2em 0;
+}
+h1 a {
+	color: inherit;
+	text-decoration: none;
+}
+h1 a:hover {
+	color: #CCC;
+}
+h1.look-1 {
+	width: 70%;
+	position: absolute;
+	right: 30%;
+	top: 0;
+	left: 0;
+	text-align: left;
+}
+h1.look-2 {
+	width: 70%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	left: 30%;
+	text-align: right;
+	-webkit-transition: all 1s ease;
+	transition: all 1s ease;
+}
+h1.look-3 {
+    position: absolute;
+    left: 0;
+    top: 0;
+	width: 30%;
+}
+h1.look-4 {
+    position: absolute;
+    right: 0;
+    top: 0;
+	width: 30%;
+}
+h2 {
+	font-family: "Open Sans", Marion, sans-serif;
+	border-bottom: 1px solid #444;
+}
+h4 {
+	text-align: center;
+    text-transform: uppercase;
+}
+.resume-location {
+	text-align: center;
+}
+.head-part {
+	display: inline-block;
+    margin: 0 .25em;
+	/*background: #202;*/
+	max-width: 100%;
+}
+/*.head-part:nth-child(1) {
+    margin: 0 2.5% 0 0;
+}
+.head-part:nth-child(2) {
+    margin: 0 0 0 2.5%;
+}*/
+.resume-part {
+	
+}
+.resume-part::after {
+	display: block;
+	padding: 2em 0 0 0;
+	height: 2em;
+	content: "";
+	border-top: 1px solid #444;
+	margin: 2em 4em 0 4em;
+}
+ul#home {
+	list-style-type: none;
+	display: block;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	text-align: center;
+	-webkit-transition: all 1.2s ease, width .1s linear;
+	transition: all 1.2s ease, width .1s linear;
+}
+/*right 1/2*/
+ul#home.go-0 {
+	position: absolute;
+	left: 70%;
+	width: 30%;
+	top: 1em;
+	bottom: 0;
+	/*width: 30%;
+	margin: 1em 0 0 70%;*/
+}
+/*left 1/2*/
+ul#home.go-1 {
+	position: absolute;
+	left: 0;
+	width: 30%;
+	right: 70%;
+	top: 1em;
+	bottom: 0;
+	/*width: 30%;
+	margin: 1em 70% 0 0;*/
+}
+li.home {
+	width: 78%;
+	max-width: 360px;
+	background: #121;
+	color: #CCC;
+	margin: 1em 0 1em 0;
+	padding: 0 5%;
+	display: inline-block;
+	text-align: left;
+	font-family: "Open Sans", marion, sans-serif;
+	-webkit-transition: all 1s ease;
+	transition: all 1s ease;
+}
+.initial li.home {
+	width: auto;
+}
+ul#home.go-1 li.home {
+	margin: .5em 0 1em -3em;
+}
+ul#home.go-0 li.home {
+	margin: .5em 0 1em 3em;
+}
+li.home p {
+	margin: 1em 0;
+	font-size: 0;
+	-webkit-transition: all .3s ease;
+	transition: all .3s ease;
+}
+li.home div.tmp {
+	margin: 1em 0;
+}
+.home a {
+	color: #777;
+	font-weight: bold;
+}
+.home a:hover {
+	color: inherit;
+}
+ul#home li.home.active {
+	background: black;
+	margin: .5em 0 1em 0;
+	box-shadow: 0 0 0 1px #CCC, inset 0 0 3px #666;
+}
+li.home.active p {
+	font-size: 1em;
+    height: auto;
+}
+li.skele {
+	background: transparent;
+    border: 1px solid #CCC;
+    color: transparent;
+    text-shadow: 0 0 2px white, 1px 2px 5px black;
+    opacity: 0.4;
+}
+.parallax {
+	visibility: hidden;
+	opacity: 0;
+	position: absolute;
+    left: -4em;
+    top: -4em;
+    right: -4em;
+    bottom: -4em;
+    z-index: -101;
+	-webkit-transition: opacity .3s ease;
+	transition: opacity .3s ease;
+}
+.parallax.on {
+	opacity: 1;
+	visibility: visible;
+	z-index: -100;
+}
+#parallax-wrap {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	z-index: -100;
+	min-height: 800px;
+}
+#overlay {
+	position: fixed;
+	left: 0;
+	top: 0;
+	min-height: 800px;
+	bottom: 0;
+	right: 0;
+	background: rgba(0,0, 0,0.3);
+	z-index: -99;
+	-webkit-transition: background 3s ease;
+	transition: background 3s ease;
+}
+#overlay.axis {
+	background: rgba(100,100,100,0.1);
+}
+#overlay.photography {
+	background: rgba(22,22,22,0.9);
+}
+#overlay.resume {
+	background: #DDD;
+}
+#education {
+	font-family: Courier, monospace;
+}
+#education ul {
+	margin: 0;
+}
+.content-wrapper {
+	display: none;
+	visibility: hidden;
+	color: white;
+	overflow-x: hidden;
+	overflow-y: auto;
+	bottom: 1em;
+	-ms-overflow-style: none;
+    -webkit-transition: all .3s ease;
+	transition: all .3s ease;
+}
+.content-wrapper::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	width: 6px;
+	background-color: transparent;
+}
+.content-wrapper::-webkit-scrollbar {
+	width: 6px;
+	margin-left: -100%;
+	background-color: transparent;
+}
+.content-wrapper::-webkit-scrollbar-thumb {
+	background-color: #000000;
+	width: 4px;
+}
+.active-content {
+    position: absolute;
+    left: 0;
+    padding: 0 1%;
+    right: 28%;
+    top: 100px;
+    visibility: visible;
+    display: inline-block;
+}
+.active-content.right {
+	right: 0;
+	left: 28%;
+}
+.content-area {
+	color: inherit;
+}
+#content-4 {
+	color: black;
+}

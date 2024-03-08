@@ -1,0 +1,305 @@
+{UTF-8}
+tagged seal birth=
+	(Untagged Fish+(Tagged Fish*1.3))*tagged seal birth rate*Tagged Seals
+	~	organisms/season
+	~		|
+
+Untagged Seal Birth=
+	(Untagged Fish+(Tagged Fish*1.3))*untagged seal birth rate*Untagged Seals
+	~	organisms/season
+	~		|
+
+Untagged Seals= INTEG (
+	Untagged Seal Birth-Seal death,
+		50-Initial Tagged Seals)
+	~	organisms
+	~		|
+
+Dead Seals= INTEG (
+	Seal death+tagged seal death,
+		0)
+	~	organisms
+	~		|
+
+Dying=
+	((Tagged Seals*0.7)+Untagged Seals)*Untagged Fish*untagged fish mortality
+	~	organisms/season
+	~		|
+
+Dying2=
+	tagged fish mortality*Tagged Fish*((Tagged Seals*0.7)+Untagged Seals)
+	~	organisms/season
+	~		|
+
+Initial Tagged Fish=
+	90
+	~	organisms [90,140,1]
+	~		|
+
+Initial Tagged Seals=
+	30
+	~	organisms [0,50,1]
+	~		|
+
+Total Seals=
+	Tagged Seals+Untagged Seals
+	~	organisms
+	~		|
+
+Untagged Fish= INTEG (
+	Untagged Fish Birth-Dying,
+		160-Initial Tagged Fish)
+	~	organisms
+	~		|
+
+tagged seal birth rate=
+	0.002
+	~	1/(organisms*season) [0,0.01,0.0001]
+	~		|
+
+Tagged Fish= INTEG (
+	Tagged Fish Birth-Dying2,
+		Initial Tagged Fish)
+	~	organisms
+	~		|
+
+Tagged Seals= INTEG (
+	tagged seal birth-tagged seal death,
+		Initial Tagged Seals)
+	~	organisms
+	~		|
+
+tagged seal mortality=
+	0.42
+	~	1/(organisms*season) [0.25,0.75]
+	~		|
+
+tagged seal death=
+	tagged seal mortality*Tagged Seals
+	~	organisms/season
+	~		|
+
+Dead Fish= INTEG (
+	Dying+Dying2,
+		0)
+	~	organisms
+	~		|
+
+"non-tagged fish birth rate"=
+	0.5
+	~	1/(organisms*season) [0.25,0.75,0.01]
+	~		|
+
+Seal death=
+	seal mortality*Untagged Seals
+	~	organisms/season
+	~		|
+
+seal mortality=
+	0.3
+	~	1/(organisms*season) [0.25,0.75]
+	~		|
+
+Tagged Fish Birth=
+	Tagged Fish*tagged fish birth rate
+	~	organisms/season
+	~		|
+
+tagged fish birth rate=
+	0.5
+	~	1/(organisms*season) [0.25,0.75,0.01]
+	~		|
+
+tagged fish mortality=
+	0.015
+	~	1/(organisms*season) [0,0.05,0.001]
+	~		|
+
+Total Fish=
+	Tagged Fish+Untagged Fish
+	~	organisms
+	~		|
+
+Untagged Fish Birth=
+	"non-tagged fish birth rate"*Untagged Fish
+	~	organisms/season
+	~		|
+
+untagged fish mortality=
+	0.008
+	~	1/(organisms*season) [0,0.05,0.001]
+	~		|
+
+untagged seal birth rate=
+	0.002
+	~	1/(organisms*season) [0,0.01,0.0001]
+	~		|
+
+********************************************************
+	.Control
+********************************************************~
+		Simulation Control Parameters
+	|
+
+FINAL TIME  = 40
+	~	season
+	~	The final time for the simulation.
+	|
+
+INITIAL TIME  = 0
+	~	season
+	~	The initial time for the simulation.
+	|
+
+SAVEPER  = 
+        TIME STEP
+	~	season [0,?]
+	~	The frequency with which output is stored.
+	|
+
+TIME STEP  = 0.2
+	~	season [0,?]
+	~	The time step for the simulation.
+	|
+
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 1
+$192-192-192,0,Times New Roman|12||0-0-0|0-0-0|0-0-255|-1--1--1|-1--1--1|72,72,75,0
+10,1,Untagged Fish,286,261,40,20,3,3,0,0,0,0,0,0
+10,2,Tagged Fish,1350,266,40,20,3,3,0,0,0,0,0,0
+10,3,Untagged Seals,292,569,40,20,3,3,0,0,0,0,0,0
+10,4,Dead Fish,786,381,40,20,3,3,0,0,0,0,0,0
+1,5,7,4,4,0,0,22,0,0,0,-1--1--1,,1|(1086,390)|
+1,6,7,2,100,0,0,22,0,0,0,-1--1--1,,1|(1352,334)|
+11,7,540,1352,390,6,8,34,3,0,0,1,0,0,0
+10,8,Dying2,1352,406,17,8,40,3,0,0,-1,0,0,0
+1,9,11,4,4,0,0,22,0,0,0,-1--1--1,,1|(520,381)|
+1,10,11,1,100,0,0,22,0,0,0,-1--1--1,,1|(288,327)|
+11,11,348,288,381,6,8,34,3,0,0,1,0,0,0
+10,12,Dying,288,397,17,8,40,3,0,0,-1,0,0,0
+12,13,48,282,61,10,8,0,3,0,0,-1,0,0,0
+12,14,48,1346,83,10,8,0,3,0,0,-1,0,0,0
+1,15,17,2,4,0,0,22,0,0,0,-1--1--1,,1|(1346,210)|
+1,16,17,14,100,0,0,22,0,0,0,-1--1--1,,1|(1346,126)|
+11,17,48,1346,168,8,6,33,3,0,0,4,0,0,0
+10,18,Tagged Fish Birth,1399,168,45,8,40,3,0,0,-1,0,0,0
+1,19,21,1,4,0,0,22,0,0,0,-1--1--1,,1|(282,201)|
+1,20,21,13,100,0,0,22,0,0,0,-1--1--1,,1|(282,109)|
+11,21,476,282,155,8,6,33,3,0,0,4,0,0,0
+10,22,Untagged Fish Birth,341,155,51,8,40,3,0,0,-1,0,0,0
+12,23,48,296,806,10,8,0,3,0,0,-1,0,0,0
+1,24,26,3,4,0,0,22,0,0,0,-1--1--1,,1|(296,643)|
+1,25,26,23,100,0,0,22,0,0,0,-1--1--1,,1|(296,754)|
+11,26,48,296,704,8,6,33,3,0,0,4,0,0,0
+10,27,Untagged Seal Birth,330,704,26,20,40,131,0,0,-1,0,0,0
+10,28,"non-tagged fish birth rate",519,205,40,14,8,3,0,0,0,0,0,0
+10,29,tagged fish birth rate,1161,207,52,8,8,3,0,0,0,0,0,0
+10,30,Total Fish,788,179,26,8,8,3,0,0,0,0,0,0
+1,31,2,30,1,0,0,0,0,64,0,-1--1--1,,1|(1005,272)|
+1,32,1,30,1,0,0,0,0,64,0,-1--1--1,,1|(539,296)|
+1,33,28,22,1,0,0,0,0,64,0,-1--1--1,,1|(491,156)|
+1,34,1,22,1,0,0,0,0,64,0,-1--1--1,,1|(373,213)|
+1,35,29,17,1,0,0,0,0,64,0,-1--1--1,,1|(1198,155)|
+10,36,untagged fish mortality,140,337,58,8,8,3,0,0,0,0,0,0
+10,37,tagged fish mortality,1498,360,52,8,8,3,0,0,0,0,0,0
+1,38,37,7,1,0,0,0,0,64,0,-1--1--1,,1|(1434,322)|
+1,39,36,11,1,0,0,0,0,64,0,-1--1--1,,1|(230,327)|
+1,40,1,11,1,0,0,0,0,64,0,-1--1--1,,1|(321,341)|
+1,41,2,7,1,0,0,0,0,64,0,-1--1--1,,1|(1321,329)|
+10,42,untagged seal birth rate,65,672,58,8,8,3,0,0,0,0,0,0
+1,43,42,26,1,0,0,0,0,64,0,-1--1--1,,1|(184,729)|
+1,44,3,26,1,0,0,0,0,64,0,-1--1--1,,1|(210,636)|
+10,45,Dead Seals,782,444,40,20,3,3,0,0,0,0,0,0
+1,46,48,45,4,0,0,22,0,0,0,-1--1--1,,1|(521,444)|
+1,47,48,3,100,0,0,22,0,0,0,-1--1--1,,1|(292,499)|
+11,48,236,292,444,8,6,33,3,0,0,4,0,0,0
+10,49,Seal death,327,444,27,8,40,3,0,0,-1,0,0,0
+10,50,seal mortality,110,524,35,8,8,3,0,0,0,0,0,0
+1,51,50,48,1,0,0,0,0,64,0,-1--1--1,,1|(199,514)|
+1,52,2,17,1,0,0,0,0,64,0,-1--1--1,,1|(1268,208)|
+1,53,3,48,1,0,0,0,0,64,0,-1--1--1,,1|(225,473)|
+10,54,Tagged Seals,1361,579,40,20,3,3,0,0,0,0,0,0
+1,55,57,45,4,0,0,22,0,0,0,-1--1--1,,1|(1085,455)|
+1,56,57,54,100,0,0,22,0,0,0,-1--1--1,,1|(1355,511)|
+11,57,172,1355,455,6,8,34,3,0,0,1,0,0,0
+10,58,tagged seal death,1355,471,44,8,40,3,0,0,-1,0,0,0
+12,59,48,1356,773,10,8,0,3,0,0,-1,0,0,0
+1,60,62,54,4,0,0,22,0,0,0,-1--1--1,,1|(1356,637)|
+1,61,62,59,100,0,0,22,0,0,0,-1--1--1,,1|(1356,726)|
+11,62,48,1356,682,8,6,33,3,0,0,4,0,0,0
+10,63,tagged seal birth,1404,682,40,19,40,131,0,0,-1,0,0,0
+10,64,tagged seal birth rate,1531,648,52,8,8,3,0,0,0,0,0,0
+10,65,tagged seal mortality,1532,481,53,8,8,3,0,0,0,0,0,0
+1,66,65,57,1,0,0,0,0,64,0,-1--1--1,,1|(1459,419)|
+1,67,54,57,1,0,0,0,0,64,0,-1--1--1,,1|(1404,517)|
+10,68,Total Seals,788,654,29,8,8,3,0,0,0,0,0,0
+1,69,3,68,1,0,0,0,0,64,0,-1--1--1,,1|(532,564)|
+1,70,54,68,1,0,0,0,0,64,0,-1--1--1,,1|(1127,582)|
+1,71,54,62,1,0,0,0,0,64,0,-1--1--1,,1|(1454,619)|
+1,72,64,62,1,0,0,0,0,64,0,-1--1--1,,1|(1453,717)|
+12,73,17093652,805,679,150,150,3,44,0,0,1,0,0,0
+population
+10,74,Initial Tagged Fish,622,41,47,8,8,3,0,0,0,0,0,0
+1,75,74,2,1,0,0,0,0,64,1,-1--1--1,,1|(879,268)|
+1,76,74,1,1,0,0,0,0,64,1,-1--1--1,,1|(474,209)|
+10,77,Initial Tagged Seals,911,39,50,8,8,3,0,0,0,0,0,0
+1,78,77,54,0,0,0,0,0,64,1,-1--1--1,,1|(1126,297)|
+1,79,77,3,0,0,0,0,0,64,1,-1--1--1,,1|(613,293)|
+1,80,54,7,1,0,0,0,0,64,0,-1--1--1,,1|(1227,493)|
+1,81,3,7,1,0,0,0,0,64,0,-1--1--1,,1|(832,477)|
+1,82,3,11,1,0,0,0,0,64,0,-1--1--1,,1|(380,487)|
+1,83,54,11,0,0,0,0,0,64,0,-1--1--1,,1|(813,478)|
+1,84,1,26,1,0,0,0,0,64,0,-1--1--1,,1|(446,517)|
+1,85,2,26,1,0,0,0,0,64,0,-1--1--1,,1|(609,471)|
+1,86,2,62,1,0,0,0,0,64,0,-1--1--1,,1|(1183,489)|
+1,87,1,62,1,0,0,0,0,64,0,-1--1--1,,1|(883,421)|
+12,88,17093656,1115,679,150,150,3,44,0,0,1,0,0,0
+Seal
+12,89,17093660,499,679,150,150,3,44,0,0,1,0,0,0
+fish
+///---\\\
+:GRAPH population
+:TITLE Population of Predators vs. Prey
+:X-AXIS Time
+:SCALE
+:VAR Total Fish
+:Y-MIN 0
+:Y-MAX 210
+:VAR Total Seals
+:Y-MIN 0
+:Y-MAX 210
+
+:GRAPH fish
+:TITLE Total Fish Population
+:SCALE
+:VAR Total Fish
+:Y-MIN 115
+:Y-MAX 210
+
+:GRAPH Seal
+:TITLE Total Seal Population
+:SCALE
+:VAR Total Seals
+:Y-MIN 45
+:Y-MAX 80
+:L<%^E!@
+1:Current.vdf
+9:Current
+23:0
+15:0,0,0,0,0,0
+19:75,0
+27:2,
+34:0,
+4:Time
+5:Initial Tagged Seals
+35:Date
+36:YYYY-MM-DD
+37:2000
+38:1
+39:1
+40:0
+41:0
+24:0
+25:40.0001
+26:40.0001

@@ -1,0 +1,1 @@
+//for scripts that you want accessible on all pages

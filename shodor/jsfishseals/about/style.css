@@ -1,0 +1,40 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
+
+body {
+	margin: auto;
+	padding: auto;
+	border: auto;
+	background: #234567;
+	color: white;
+	font-family: 'Open Sans';
+	overflow: hidden;
+	width: 80%;
+}
+.content {
+	position: absolute;
+	padding: 0 10px;
+	width: 80%;
+}
+
+a {
+	color: #ff9a00;
+	z-index: 9998;
+}
+
+h3 {
+	z-index: 9998;
+}
+
+#bgcanvas {
+	position:fixed;
+	top:0;
+	left:0;
+	z-index: -1;
+}
+
+#fgcanvas {
+	position:fixed;
+	top:0;
+	left:0;
+	z-index: 1;
+}

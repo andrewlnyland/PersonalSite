@@ -1,0 +1,51 @@
+body {
+	margin: 0;
+	font-family: monospace;
+}
+
+div {margin: 0;}
+
+.slash-outer {
+	-webkit-transform: rotate(-60deg);
+	transform: rotate(-60deg);
+	width: 250px;
+	top: 200px;
+	position: absolute;
+}
+
+.slash-main {
+	width: 200px;
+	height: 20px;
+	background: #CCC;
+	padding-left: 20px;
+}
+.slash-outer-bottom {
+	position: absolute;
+	border-top: transparent solid 20px;
+	border-right: 10px solid #CCC;
+	width: 0;
+	height: 0;
+	transform: rotate(150deg);
+	margin: 0 0 0 -4px;
+}
+.slash-outer-top {
+	position: absolute;
+	border-top: transparent solid 20px;
+	border-right: 10px solid #CCC;
+	width: 0;
+	height: 0;
+	right: 26px;
+	bottom: 0;
+	transform: rotate(-30deg);
+	margin: 0 0 0 -4px;
+}
+.slash-end {
+	background: #CCC;
+	width: 180px;
+	height: 20px;
+	position: absolute;
+	left: 460px;
+	top: 213px;
+	padding-left: 20px;
+	transform: rotate(-90deg);
+}

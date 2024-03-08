@@ -1,0 +1,122 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+body {
+	margin: 0;
+	font-family: 'Roboto';
+}
+.page-wrap {
+	width: 85%;
+	max-width: 1080px;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+.clearfix {
+	clear: both;
+}
+
+h1, h2, h3 {
+	font-family: 'Lobster', 'Roboto', Avenir;
+	text-align: center;
+}
+a {
+	color: black;
+	text-decoration: none;
+}
+a:hover {
+	color: #101090;
+}
+p {
+	line-height: 1.8;
+	margin-top: 40px;
+}
+
+/*-----header style-----*/
+.header {
+}
+#pagetitle-wrap {
+	width: 40%;
+	float: left;
+}
+#pagetitle-wrap a {
+	text-align: left;
+	display: inline-block;
+	width: 100%;
+}
+#pagetitle-wrap h1 {
+	text-align: inherit;
+}
+#main-nav {
+	float: left;
+	width: 60%;
+	font-family: 'Lobster', 'Roboto', Avenir;
+}
+#main-nav ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+#main-nav ul li {
+	float: right;
+	padding: 20px 5px;
+	font-size: 1.5em;
+}
+#main-nav ul li a {
+	text-align: center;
+	display: inline-block;
+	padding: 10px;
+}
+
+/*-----footer style-----*/
+.footer-wrap {
+	background: url("/~anyland/noise.png") #666;
+	color: #DDD;
+}
+.footer-wrap a {
+	color: #DDD;
+}
+.note {
+	background: rgba(255, 255, 255, 0.3);
+	text-align: center;
+	padding: 10px 0;
+}
+.extras {}
+.extras h4 {
+	text-align: center;
+	margin: 10px 0;
+}
+.extras ul {
+	margin: 0;
+	padding: 0 10%;
+	background: rgba(0, 0, 0, 0.3);
+	list-style-type: none;
+}
+.extras ul li {
+	float: left;
+	width: 18%;
+	text-align: center;
+	padding: 10px 1%;
+}
+
+/*-----blog style-----*/
+.blog {
+	
+}
+
+
+/*-----portfolio style-----*/
+
+img.preview {
+	max-width: 100%;
+	/*width: 300px;*/
+	height: auto;
+}
+#projects {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+#projects li {
+	float: left;
+	width: 30%;
+	margin: 10px 1.665%;
+}

@@ -1,0 +1,167 @@
+@import url('omni.css');
+@import url(http://fonts.googleapis.com/css?family=Lato);
+@import url(http://fonts.googleapis.com/css?family=Lato:300);
+::selection {
+	background: rgba(204, 204, 204, 0.3);
+	color: #444;
+	text-shadow: none;
+}
+::-webkit-scrollbar {
+	width: 10px;
+	background: #CCC;
+	height: 10px;
+	margin-right: 5px;
+}
+::-webkit-scrollbar-thumb {
+	background: #444;
+	width: 8px;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+	border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:active {
+	background: #666;
+	border: 1px solid rgba(255, 255, 0, 0.5);
+}
+body {
+	font-family: Calibri, Marion, Georgia;
+}
+header {
+	font-family: 'Lato', Avenir;
+	font-weight: 300;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Lato', Avenir;
+	margin: 0;
+	font-weight: normal;
+}
+h1, h2, h3 {
+	margin: 1em 0;
+}
+h4, h5, h6 {
+	font-weight: normal;
+	margin: 0.5em 0;
+}
+h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
+	display: block;
+}
+header , footer {
+	color: white;
+}
+.page-title div {
+	font-size: 90px;
+	color: #CCC;
+	font-family: Marion, Avenir;
+	text-align: center;
+}
+.page-title:hover div {
+	color: white;
+}
+a {
+	color: #440;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+article:hover a {
+	color: #888;
+}
+article h1 {
+	font-size: 2em;
+}
+article h1, article h2, article h3 {
+	padding: 1em 0;
+	max-width: 640px;
+	width: 85%;
+	margin: 0 auto;
+}
+p {
+	font-size: 1em;
+	line-height: 1.5em;
+	font-family: Calibri, Marion, Georgia;
+	padding: 1em 0;
+	max-width: 640px;
+	width: 85%;
+	margin: 0 auto;
+}
+footer {
+	font-family: Calibri, 'Lato', Avenir;
+	color: #C9C9C0;
+}
+footer h3 {
+	color: #DDD;
+}
+footer a:hover {
+	color: #CCC;
+}
+footer small {
+	font-family: Marion, inherit;
+	text-align: center;
+	color: #BBB;
+	text-shadow: 0 1px 0 rgba(68, 68, 68, 0.5);
+}
+footer h4, footer h5, footer h6 {
+	color: #CCC;
+	text-shadow: 1px 0px 0 rgba(255,255,0,0.3);
+}
+footer p {
+	text-shadow: 0 1px 2px #444;
+}
+footer a {
+	color: inherit;
+}
+
+nav ul li {
+	color: #CCC;
+}
+nav ul li a {
+	text-decoration: none;
+	font-size: 16px;
+	text-align: center;
+	font-weight: 300;
+	text-transform: uppercase;
+	color: inherit;
+}
+nav ul li a:hover {
+	text-decoration: none;
+}
+input[type="button"], input[type="submit"] {
+	cursor: pointer;
+}
+footer input[type="submit"], footer input[type="text"] {
+	font-weight: 300;
+}
+footer input[type="submit"] {
+	color: black;
+}
+
+.footer-nav.myself li a {
+	text-align: center;
+}
+.footer-link {
+	color: #444;
+	text-align: center;
+}
+.footer-link:hover {
+	color: #CCC;
+	text-shadow: 0 0 0 1px white;
+}
+#search-container {
+}
+/*-----------CLASS STYLING---------*/
+
+.and {
+	color: #AAA;
+}
+
+/*------WORDPRESS STUFF------*/
+img.alignright {float:right; margin:0 0 1em 1em}
+img.alignleft {float:left; margin:0 1em 1em 0}
+img.aligncenter {display: block; margin-left: auto; margin-right: auto}
+.alignright {float:right; }
+.alignleft {float:left; }
+.aligncenter {display: block; margin-left: auto; margin-right: auto}

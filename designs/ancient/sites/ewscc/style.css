@@ -1,0 +1,52 @@
+@import url(http://fonts.googleapis.com/css?family=Cabin);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
+body {
+	margin: 0;
+	font-family: 'Open Sans';
+	background: url("http://www.emersonwaldorf.org/images/main_bg_tile.gif") #EEE;
+}
+.clearfix {
+	clear: both;
+}
+.page-wrap {
+	width: 85%;
+	max-width: 960px;
+	margin: auto auto;
+}
+.ewscolor {
+	color: rgb(140, 80, 120);
+}
+.two-across {
+	width: 50%;
+	float: left;
+}
+#header .two-across {
+	text-align: center;
+}
+#header h1 {
+	font-size: 3.5em;
+	font-family: 'Cabin';
+}
+#nav {
+	background: white;
+	border-bottom: 6px dotted #936304;
+	border-top: 6px dotted #936304;
+}
+#nav ul {
+	list-style-type: none;
+	margin: 0 auto;
+	padding: 4px 0;
+	width: 70%;
+}
+#nav li {
+	float: left;
+	width: 25%;
+	text-align: center;
+}
+#nav li a {
+	color: rgb(140, 80, 120);
+	text-decoration: none;
+	font-family: 'Cabin';
+	font-size: 1.8em;
+	padding: 10px;
+}

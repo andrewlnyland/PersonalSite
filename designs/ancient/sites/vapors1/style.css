@@ -1,0 +1,50 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100);
+body, html {height: 100%;}
+body {
+	margin: 0;
+	background: #111;
+	background-size: 100%;
+	font-family: avenir;
+}
+img {
+	max-width: 100%;
+}
+h1, h2, h3 {
+	font-family: 'Lato';
+}
+a, a:visited {
+	color: inherit;
+}
+h1 {font-size: 4em;}
+h2 {font-size: 3em;}
+#part-first {
+	background: url("bg4.jpg") bottom;
+	color: white;
+	padding: 10px 5%;
+}
+.part p {
+	margin: 3em 0;
+}
+#part-second {
+	background: url("bg3.jpg") center;
+	color: #DDD;
+}
+#part-second h2 {
+	text-align: center;
+}
+#part-third {
+	background: url("bg1.jpg") bottom;
+	color: #AAA;
+	padding: 10px 5%;
+}
+.part {
+	padding: 2%;
+	background-size: 100% !important;
+}
+.part p a {
+	font-style: italic;
+}
+#map {
+	margin: 0 auto;
+	display: block;
+}

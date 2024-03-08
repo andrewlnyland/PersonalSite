@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Fish and Seals by Andrew, Tyler, and Vincent</title>
+		<meta charset="UTF-8">
+		<script src="seals1.js"></script>
+		<script src="script.js"></script>
+		<link href="style.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="content">
+			<h1>Fish and Seal Interaction <span style="color: rgba(255, 255, 255, .2);">~</span> Javascript Model</h1>
+			<p>By Andrew Nyland, Tyler French, and Vincent Xia</p>
+			<a href="about">More info</a>
+		</div>
+		<canvas id="fishsealcanvas">This element is not supported.</canvas>
+		<div id="side-items">
+			<canvas id="datacanvas" style="display: none"></canvas>
+			<div id="controls">
+				<input type="button" id="changeview" value="Open graph" onclick="opengraph();"/>
+				<input type="button" id="changeviewback" value="Close graph" onclick="closegraph();" style="display: none;"/>
+				<div><b>Controls</b></div>
+				<input type="text" placeholder="Fish Count" id="fishcount" onchange="configure();"/>
+				<br/>
+				<input type="text" placeholder="Seal Count" id="sealcount" onchange="configure();"/>
+				<br/>
+				<div>Fish Speed: <span id="m"></span></div>
+				<input type="range" min="1" max="10" value="50" id="slider" onchange="configure();"/>
+				<br/>
+				<div>Model Speed: <span id="speed"></span></div>
+				<input type="range" min="1" max="500" value="80" id="timeslider" onchange="configure();"/>
+				<br/>
+			</div>
+		</div>
+	</body>
+</html>

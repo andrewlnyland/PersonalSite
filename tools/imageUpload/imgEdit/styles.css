@@ -1,0 +1,39 @@
+body {
+	/*margin: 0;*/
+	
+}
+img.thumb {
+	max-width: 100%;
+}
+.clearfix {
+	clear: both;
+}
+.image-wrap {
+	width: 23%;
+	display: block;
+	padding: 0 1%;
+	float: left;
+}
+.upload-image {
+	
+}
+.upload-image label {
+	display: block;
+}
+fieldset {
+	border: none;
+	border-top: 1px solid #BBB;
+	outline: none;
+}
+.delete-button {
+	color: red;
+}
+.delete-button:hover {
+	text-decoration: underline;
+}
+.delete-button:active {
+	background: red;
+}
+input {
+	margin: 1em;
+}

@@ -1,0 +1,50 @@
+<h2>Intro to Programming</h2>
+<p>I like and am interested in a lot of aspects of computer science, including hardware engineering, but I find programming especially intriguing. To me, it is more than just different parts of the computer doing their specific tasks, it is a way to control and organize those capabilities. I love the tasks of figuring out an algorithm to complete a task in the fastest and most accurate way possible. And, despite their complexities and differences, all methods of programming are extremely similar.</p>
+<h3>Intro</h3>
+<p>Programming is quite different than coding. The entire process of programming includes coding, but what makes it special is figuring out your entire algorithm before determining which parts of code you will need and writing them to run your program. This process can be quite difficult and takes many hours to perfect, and relies on a basic understanding of coding, which is your way of communicating your commands to the computer. Most programmatic syntax is quite similar, uses the same basic ideas, and is reasonably easy to understand fundamentally.</p>
+<h3>The Basics</h3>
+<p>Many basic commands in most languages are quite similar. Programming a computer ultimately deals with two types of commands and directives; data, and actions. These actions work with the data and create some sort of output. For now, the data is the important part, and computers usually store it in three main types; numbers, text, and objects. Numbers consist of all numeric values, and are usually split into two categories; integers and floating point values (fractional values, stored in a decimal representation). Text is stored of character strings, and both numbers and text strings tend to be objects, which are pieces of data with parameters and actions.</p>
+<h3>Defining basic data</h3>
+<p>Languages range from specificity of object type from not caring to needing to know exactly what type of data it will be. Usually, data types of a variable cannot be changed after definition. Most languages allow the user to define two main ways to store data; as variables, which can redefined and given different values later, and constants, which can only be defined once (constants are far faster for computation).</p>
+<h4>Javascript</h4>
+<pre>var VARIABLENAME = VARIABLEVALUE;</pre>
+<p>Javascript doesn’t care what type of variable you are using, and they can usually be redefined to any value of any type. Variables will look similar to this: <code>var myVar = 12;</code> (integer) or <code>var myVar = 4.365;</code> (floating point number), <code>var myVar = "some text";</code> (string), or <code>var myVar = new Object();</code> (object).</p>
+<h4>PHP</h4>
+<pre>$VARIABLENAME = VARIABLEVALUE;
+</pre>
+<p>PHP is similar to javascript in that it does not need the variable type to be defined. It is unique that variables and only variables start with “$”, which allows them to be called directly from within a text string, and it’s syntax will look very similar to javascript – the only difference is the “$” at the beginning of the variable name. <em>[enter more languages]</em></p>
+<h3>Arrays</h3>
+<p>For all data types, there is a more complex storage method that allows to organize and control our data much easier. Arrays allow us to store a collection of data using a key to access our data, and so we do not need to designate names for all of our data or need to know how much data we will be using. Text strings are technically arrays of characters, and there are arrays of actions for different data types (such as summing a collection of numbers). There is a variation of an array called a dictionary, but we’ll learn about that later.</p>
+<p>Javascript defines arrays pretty simply <code>var myVar = new Array("items");</code> or <code>var myVar = ["items"];</code> and doesn’t care about types or how many different data types are in the array, and PHP defines arrays quite simply as well <code>$myVar = array("items")</code>. All arrays can be combined, altered, and sorted. <em>[enter more languages]</em></p>
+<h3>Objects</h3>
+<p>As I said before, objects contain two parts; parameters (or sub-objects) and methods (actions). All parameters can be other objects of any type. Most languages allow the user to define classes, which are templates for objects, and objects can be created as enumerations of that class.</p>
+<p>Javascript and PHP define objects quite simply:</p>
+<pre>var VARIABLENAME = new Object();</pre>
+<p><code>Object()</code> is usually a constructor function which returns an object and can accept arguments to be used in creating that object. Another example of the way these languages define objects is:</p>
+<pre>var cup = {
+	var height = 2;
+	var width = 3;
+	var full = 0;
+	function fillCup() {
+		full= full+1;
+	}
+};
+</pre>
+<h3>Methods</h3>
+<p>While it’s great to be able to store data in any way that we could want to, it’s almost useless if it is only stored and not used. Actions are defined as functions and exist to give the computer direct commands. Functions can return data, and can be given data to process. Here is a simple example of a function:</p>
+<pre>function max(a, b) {
+	if (a &gt;= b) {
+		return a;
+	} else {
+		return b;
+	}
+}
+</pre>
+<p>Methods are used to perform actions on existing data, or process incoming or outgoing data. They can use logic and other algorithmic elements to process this data. This function above takes an input of 2 variables, checks which is larger, and returns this value. Methods are usually written as <code>functions</code> or <code>func</code>, and the inputs are called arguments while the outputs are called return statements.</p>
+<h4>Javascript</h4>
+<pre>function (args) { //args can be declared or stored as arrays
+	//code goes here
+	return "value"; //return statement
+}
+</pre>
+<p>To learn more about programming, <a>continue</a>.</p>

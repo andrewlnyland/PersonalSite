@@ -1,0 +1,57 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab|Roboto);
+html, body {
+	height: 100%;
+}
+body {
+	margin: 0;
+	background: url("bg1.jpg") center no-repeat #111;
+	background-size: cover;
+	font-family: 'Roboto';
+}
+.sidebar {
+	width: 10em;
+	font-family: 'Roboto Slab', sans-serif;
+	background: url("bg2.jpg") center bottom no-repeat rgba(0, 0, 0, 0.8);
+	height: 100%;
+}
+#logo {
+	background: url("vl.png") center no-repeat;
+	background-size: contain;
+	height: 10em;
+}
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+nav ul li {
+	width: 100%;
+	display: inline-block;
+	border-bottom: 1px solid #888;
+	box-shadow: inset 0 0 40px #111;
+}
+nav ul li:hover {
+	background: #A9A933;
+	transition: all ease 0.3s;
+}
+nav ul li:nth-child(even):hover {
+	background: #978D1A;
+}
+nav ul li:first-child {
+	border-top: 1px solid #888;
+}
+nav ul li a {
+	display: inline-block;
+	padding: 20px;
+	text-decoration: none;
+	color: #CCC;
+	font-family: 'Roboto Slab';
+}
+.main {
+	position: absolute;
+	left: 10em;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	height: 100%;
+}

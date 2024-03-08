@@ -1,0 +1,33 @@
+body {margin: 0; overflow: hidden;}
+canvas:active {cursor: none;}
+nav {
+	background: #444;
+	color: #CCC;
+	border-bottom: 1px solid black;
+	border-top: 1px solid #777;
+}
+nav > div {
+	display: inline-block;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: Verdana;
+	padding: 5px;
+	cursor: pointer;
+}
+#layer-wrap {
+	position: absolute;
+	top: 36px;
+	right: 0;
+	width: 10%;
+	bottom: 0;
+	background: #DDD;
+	box-shadow: 0 0 2px 1px white;
+	padding: 10px 1%;
+}
+.layer {
+	padding: .5em .25em;
+	border-bottom: 1px solid black;
+}
+.layer.current {
+	background: white;
+}

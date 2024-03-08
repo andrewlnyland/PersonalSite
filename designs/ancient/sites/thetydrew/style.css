@@ -1,0 +1,233 @@
+body {
+	margin: 0;
+	font-family: Helvetica;
+	background: #E8E8E8;
+}
+.page-wrap {
+	max-width: 1400px;
+	width: 90%;
+	margin: 0 auto;
+}
+.clearfix {
+	clear: both;
+}
+.center {
+	margin-left: auto;
+	margin-right: auto;
+}
+h1, h2, h3 {
+	text-align: center;
+	font-weight: normal;
+}
+a {
+	color: black;
+	text-decoration: none;
+}
+a:hover {
+	color: red;
+}
+a:active {
+	color: #900;
+}
+img {
+	max-width: 100%;
+}
+#overlay {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.8);
+	display: none;
+}
+
+.photos-page {
+	background: url("images/photosbanner.png") center no-repeat;
+}
+.graphics-page {
+	background: url("images/graphicdesignbanner.jpg") center top no-repeat;
+}
+
+.module1 {
+	background: white;
+	box-shadow: 2px 3px 2px #CCC, 0 0 0 1px #AAA;
+	border-radius: 4px;
+}
+.module1 div {
+	margin: 12px;
+}
+
+/*---HEADER---*/
+header {
+	
+}
+#home-link-wrap {
+	height: 200px;
+}
+.light #home-link {
+	background: url("images/bannerwhite.png") center no-repeat;
+	background-size: 40%;
+}
+#home-link {
+	width: 100%;
+	height: 100%;
+	display: block;
+	background: url("images/bannerdark.png") center no-repeat;
+	background-size: 40%;
+}
+#main-nav {
+	height: 70px;
+	background: #333;
+	text-align: center;
+}
+#main-nav ul {
+	margin: 0;
+	display: inline-block;
+	padding: 0;
+	list-style-type: none;
+}
+#main-nav ul li {
+	float: left;
+	color: #CCC;
+	padding: 30px;
+}
+#main-nav ul li:hover {
+	color: white;
+}
+#main-nav ul li:hover .nav-link-highlight {
+	width: 100%;
+}
+header a, header a:hover {
+	color: inherit;
+	text-transform: uppercase;
+}
+.nav-link-highlight {
+	clear: both;
+	background: #0094FF;
+	height: 3px;
+	width: 0;
+	transition: 0.25s width ease;
+}
+
+/*---PORTFOLIO---*/
+/*--MAIN PAGE--*/
+body.portfolio header {
+	margin-bottom: 0;
+	background: url('/images/logosbanner.jpg') center fixed no-repeat;
+}
+.portfolio-choose-section {
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	padding: 8em 5%;
+}
+.portfolio-choose-section:nth-child(even) {
+	text-align: right;
+	color: white;
+}
+.portfolio-choose-section:nth-child(odd) {
+	text-align: left;
+}
+.portfolio-choose-section h1 {
+	font-size: 8em;
+	text-align: inherit;
+	font-weight: 100;
+	text-transform: uppercase;
+	font-family: "Helvetica Neue", inherit;
+	color: inherit;
+}
+.portfolio-choose-section h1 a {
+	color: inherit;
+}
+.portfolio-choose-section h1 a:hover {
+	color: #FF3333;/*red*/
+}
+.portfolio-choose-section:nth-child(even) h1 a:hover {
+	color: #0094FF;/*blue*/
+}
+.portfolio-choose-section h1 a span {
+	font-size: 120%;
+}
+
+/*--LOGO PAGE--*/
+.logo-portfolio-wrap {
+	float: left;
+	width: 20%;
+	margin: 20px 2.5%;
+	background: white;
+	border-radius: 4px;
+	box-shadow: 2px 3px 2px #CCC, 0 0 0 1px #AAA;
+}
+.logo-portfolio-wrap div {
+	margin: 10px;
+}
+.logo-portfolio-wrap img {
+	max-width: 100%;
+	max-height: 260px;
+}
+
+/*--PHOTOS PAGE--*/
+.photo-wrap-half {
+	width: 50%;
+	float: left;
+}
+
+/*--GRAPHIC DESIGN PAGE--*/
+.graphic-wrap {
+	width: 46%;
+	margin: 20px 2%;
+	float: left;
+	background: white;
+	border-radius: 3px;
+	box-shadow: 2px 3px 2px #CCC, 0 0 0 1px #AAA;
+}
+.graphic-wrap div {
+	margin: 10px;
+}
+
+
+/*--ABOUT PAGE--*/
+.individual-profile#left-profile {
+	margin: 30px 2% 30px 0;
+}
+.individual-profile#right-profile {
+	margin: 30px 0 30px 2%;
+}
+.individual-profile {
+	margin: 30px 0;
+	width: 48%;
+	float: left;
+}
+.individual-profile div h2 {
+	margin: 30px 0;
+}
+.individual-profile div p {
+	line-height: 1.5;
+	max-width: 500px;
+	margin: 30px auto;
+	font-family: "Helvetica Neue";
+	font-weight: 200;
+}
+
+
+/*---CONTACT---*/
+.info#header h2, .info#header div {
+	padding: 1em 1% 1.1em 1%;
+}
+.contact-form {
+	margin-left: 50%;
+}
+input[type="text"], textarea {
+	border: 1px solid #CCC;
+	font-family: Helvetica;
+	padding: 13px 10px 10px 10px;
+	font-size: 1em;
+	margin: 10px 0;
+}
+input[type="text"]:target, textarea:target {
+	outline: 1px solid yellow;
+}
+.contact-form textarea {
+	width: 300px;
+	height: 200px;
+}

@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,400italic|Bitter|Hind');
+body, html {
+	height: 100%;
+}
+body {
+	margin: 0;
+	font-family: 'Open Sans', Georgia, sans-serif;
+	background: #444;
+}
+h1, h2, h3 {
+	font-family: 'Bitter';
+}
+.clearfix {clear: both;}
+.page-wrap {
+	background: #eee;
+	width: 90%;
+	margin: 0 auto;
+	padding: 20px 0;
+}
+.content-wrap {
+	margin: 0 2%;
+}
+
+/*--HEADER--*/
+.header-wrap {
+	margin: 0 auto;
+	background: white;
+	border-bottom: 1px solid #DDD;
+}
+.header-wrap .header-section {
+	float: left;
+	width: 50%;
+}
+.header-section > * {
+	margin: 20px;
+}
+.header-wrap .header-section > h1 {
+	/*margin: 0;*/
+	font-size: 32px;
+}
+.header-wrap a {
+	color: black;
+	text-decoration: none;
+}
+.header-wrap a:hover {
+	border-bottom: 1px dotted #444;
+}
+.header-wrap ul {
+	list-style-type: none;
+	padding: 0;
+	display: inline-block;
+	float: right;
+}
+.header-wrap ul li {
+	float: left;
+	padding: 8px 16px;
+}
+
+/*--HOME--*/
+.home {
+	background: url("bgd.jpg") no-repeat center top;
+	background-size: cover;
+}
+.home-wrap {
+	width: 80%;
+	margin: 0 auto;
+}
+.home-item {
+	margin: 20px;
+	padding: 10px;
+	background: white;
+}
+#home-first {
+	float: left;
+	width: 30%;
+}
+
+
+
+/*--FOOTER--*/
+.footer-wrap {
+	width: 90%;
+	margin: 0 auto;
+	padding: 20px;
+	color: #EEE;
+	font-family: 'Lato';
+}
+.footer-slogan {
+	background: #222;
+	text-align: center;
+	color: #AAA;
+	padding: .5em;
+	font-family: 'Hind';
+}
+.home-footer-slogan {
+	background: white;
+	text-align: center;
+	color: #444;
+	padding: .5em;
+	font-family: 'Hind';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.footer-wrap a {
+	color: #EEE;
+	text-decoration: none;
+}
+.footer-wrap ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+.footer-wrap li {
+	display: inline-block;
+	padding-right: 1em;
+}

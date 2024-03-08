@@ -1,0 +1,129 @@
+@import url(http://fonts.googleapis.com/css?family=Quicksand:300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Lato:100);
+body {
+	margin: 0;
+	background: #EEE;
+	font-family: 'Quicksand', sans-serif;
+}
+.clearfix {
+	clear: both;
+}
+#header1 {
+	/*background: url("/images/mementusg.png") no-repeat center #555;*/
+	height: 90px;
+	background: url("images/mementusslice.jpg") repeat-x bottom #444;
+	text-align: center;
+}
+#header1 a {
+	background: url("images/mementus.jpg") no-repeat bottom #444;
+	height: 90px;
+	width: 400px;
+	display: inline-block;
+}
+header {
+	background: #404040;
+	padding: 5px 0 5px 0;
+	background-size: 300px;
+}
+header nav {
+	width: 600px;
+	margin: 0 auto;
+}
+header ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+header ul li {
+	float: left;
+	width: 25%;
+	text-align: center;
+}
+header li > a {
+	color: #EEE;
+	text-decoration: none;
+	font-size: 20px;
+}
+.page-wrap {
+	max-width: 1500px;
+	width: 90%;
+	margin: 20px auto;
+}
+.main-page-section-wrapper {
+	/*height: 450px;*/
+}
+.main-page-section-wrapper a {
+	font-family: 'Lato';
+	font-weight: 100;
+	text-decoration: none;
+	font-size: 150px;
+	margin: 150px 10%;
+	width: 80%;
+	display: inline-block;
+}
+.main-page-section-wrapper a.left {
+	text-align: left;
+	color: black;
+}
+.main-page-section-wrapper a.left:hover {
+	color: #0094FF;
+}
+.main-page-section-wrapper a.right {
+	text-align: right;
+	color: white;
+}
+.main-page-section-wrapper a.right:hover {
+	color: #FF3333;
+}
+
+h1 {
+	text-align: center;
+}
+
+img {
+	max-width: 100%;
+}
+#overlay {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.8);
+	display: none;
+}
+
+.logo-portfolio-wrap {
+	float: left;
+	width: 20%;
+	margin: 20px 2.5%;
+	background: white;
+	border-radius: 4px;
+	box-shadow: 2px 3px 2px #CCC, 0 0 0 1px #AAA;
+}
+.logo-portfolio-wrap div {
+	margin: 10px;
+}
+.logo-portfolio-wrap img {
+	max-width: 100%;
+	max-height: 260px;
+}
+
+/*--PHOTOS PAGE--*/
+.photo-wrap-half {
+	width: 50%;
+	float: left;
+}
+
+/*--GRAPHIC DESIGN PAGE--*/
+.graphic-wrap {
+	width: 46%;
+	margin: 20px 2%;
+	float: left;
+	background: white;
+	border-radius: 3px;
+	box-shadow: 2px 3px 2px #CCC, 0 0 0 1px #AAA;
+}
+.graphic-wrap div {
+	margin: 10px;
+}

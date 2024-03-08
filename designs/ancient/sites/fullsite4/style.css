@@ -1,0 +1,87 @@
+@import url(http://fonts.googleapis.com/css?family=Lato);
+body {
+  margin: 0;
+  background: #E5E5E5;
+  font-family: Georgia;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Lato', Avenir;
+}
+a {
+  color: green;
+}
+a:hover {
+  color: blue;
+}
+a:active {
+  text-decoration: none;
+}
+.page-wrap {
+  max-width: 1400px;
+  width: 85%;
+  margin: 0 auto;
+}
+.centeredimagewrap {
+  text-align: center;
+}
+.clearfix {
+  clear: both;
+}
+header {
+  background: white;
+  font-family: 'Lato';
+}
+header ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+header ul li {
+  float: left;
+  width: 20%;
+}
+header a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  text-size: 20px;
+  padding: 20px 0;
+}
+header a:hover {
+  background: #E5E5E5;
+}
+.post {
+  margin: 20px auto;
+  box-shadow: 0 0 0 1px #CCC, 1px 2px 3px #CCC;
+  background: white;
+}
+.post-info-wrap {
+  text-align: center;
+  text-transform: uppercase;
+}
+.post-info-wrap h1 {
+  margin: auto auto 0 auto;
+  font-size: 2em;
+}
+.post-info-wrap time {
+  color: #999;
+  font-size: .8em;
+}
+.post-content {
+  margin: 25px;
+  padding: 25px 0;
+}
+article img {
+  max-width: 100%;
+  max-height: 100%;
+}
+article p {
+  max-width: 800px;
+  margin: 1.5em auto;
+  line-height: 1.6;
+  text-indent: 3em;
+}
+.readmore {
+  text-align: center;
+}

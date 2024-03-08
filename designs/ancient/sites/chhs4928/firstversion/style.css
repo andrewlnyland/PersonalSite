@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,400italic|Montserrat:300,700');
+body {
+	margin: 0;
+	font-family: 'Open Sans', Georgia, san-serif;
+	min-width: 714px;
+}
+/*--GENERAL STYLES--*/
+h1,h2,h3 {
+	font-family: 'Montserrat';
+}
+.page-wrap {
+	padding: 2.5% 5%;
+}
+.clearfix {
+	clear: both;
+}
+h2 {
+	font-size: 2em;
+	color: rgb(225, 130, 0);
+}
+h3 {
+	font-size: 1.5em;
+	margin-bottom: 0;
+}
+p {
+	line-height: 1.8;
+}
+/*--HEADER STYLES--*/
+.banner {
+	height: 300px;
+	background: url("team4829.jpg") center top fixed no-repeat #223;
+	background-size: 100% auto;
+}
+.nav {
+	padding: 2.5% 5%;
+}
+.nav h1 {
+	font-size: 3em;
+	margin: 0;
+}
+h1 a {
+	text-decoration: none;
+	color: black;
+}
+h1 a:hover {
+	color: rgb(255, 130, 0);
+}
+.nav div.page-description {
+	color: rgb(220, 90, 0);
+}
+.nav-section {
+	width: 50%;
+	float: left;
+}
+.nav-section ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	float: right;
+	max-height: 80px;
+}
+.nav-section ul li {
+	float: left;
+	text-align: center;
+	padding: 29px 10px;
+	transition: border ease .7s;
+	-webkit-transition: border ease .7s;
+}
+.nav-section ul li:hover a {
+	color: rgb(255, 130, 0);
+	transition: all ease .1s;
+	-webkit-transition: all ease .1s;
+}
+.nav-section ul li a:hover {
+	text-decoration: underline;
+}
+.nav-section ul li a {
+	color: #222;
+	padding: 5px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #333;
+}
+/*--ABOUT STYLES--*/
+.about.section {
+	
+	
+}
+.about #robot-pic {
+	margin-left: 3%;
+	height: 400px;
+	width: 272px;
+	float: right;
+	background: url("robot.jpg") right center scroll no-repeat;
+	background-size: 272px 400px;
+}
+/*--TEAM STYLES--*/
+.team {
+	background: #EEE;
+	border-top: 1px solid #CCC;
+	border-bottom: 1px solid #CCC;
+}
+.team h2 {
+	text-align: center;
+}
+.person-wrap-outer {
+	width: 25%;
+	float: left;
+	min-height: 550px;
+}
+.person-wrap-inner {
+	margin: 10px;
+	background: white;
+	padding: 20px;
+	box-shadow: 0 0 8px #CCC;
+}
+.person-wrap-inner img {
+	max-width: 100%;
+}
+.person-wrap-inner .person-description {
+	margin: 1em 0;
+}
+.person-wrap-inner .quote {
+	font-style: italic;
+	font-size: 80%;
+}
+.person-wrap-inner .quote::before, .person-wrap-inner .quote::after {
+	content: "\"";
+}
+/*--CONTACT STYLES--*/
+.contact h2 {
+	text-align: right;
+}
+form > div {
+	margin: 20px 0;
+}
+form label {
+	font-weight: 700;
+	display: inline-block;
+	width: 45%;
+	text-align: right;
+}
+form label.at-top {
+	vertical-align: top;
+}
+form input {
+	font-size: 1em;
+}
+input[type="submit"] {
+    margin-left: 45.2%;
+}
+
+/*---FOOTER STYLES---*/
+.footer {
+	background: #333;
+	border-top: 1px solid black;
+}

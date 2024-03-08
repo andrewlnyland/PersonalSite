@@ -1,0 +1,125 @@
+body {
+	margin: 0;
+	font-family: 'Open Sans';
+	background: #DDD;
+	height: 2000px;
+}
+.clearfix {
+	clear: both;
+}
+.page-wrap {
+	width: 85%;
+	max-width: 1150px;
+	margin: 0 auto;
+}
+
+/*--HEADER--*/
+header {
+	background: #666;
+	color: #EEE;
+	border-bottom: 1px solid white;
+}
+header h1 {
+	margin: 0;
+	padding: 1em 0;
+}
+header a {
+	color: inherit;
+	text-decoration: none;
+	border-bottom: 1px dotted #CCC;
+}
+header a:hover {
+	color: white;
+}
+#home-link {
+	font-weight: bold;
+}
+.hb {
+	float: left;
+	margin: 1em 0;
+}
+.hb-left {
+	width: 30%;
+	color: #DDD;
+}
+.hb-right {
+	width: 70%;
+	text-align: right;
+	font-size: small;
+}
+
+#floating-header {
+	z-index: 9999;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	background: #191919;
+	visibility: hidden;
+	opacity: 0;
+	font-size: 1.1em;
+	transition: opacity .4s ease;
+}
+#floating-header.here {
+	opacity: 1;
+	visibility: visible;
+}
+#floating-header a {
+	display: inline-block;
+	padding: .5em;
+	color: #BBB;
+	text-decoration: none;
+}
+#floating-header a:hover {
+	color: white;
+}
+#other-links {
+	float: right;
+}
+
+.about-me {
+	background: url("mebg.jpg") center top no-repeat fixed;
+	background-size: cover;
+	padding: 20px 0;
+	border-bottom: 1px solid #AAA;
+}
+.home-about-wrap {
+	margin: 0 auto;
+}
+.home-about-part {
+	float: left;
+	height: 400px;
+}
+.home-about-content {
+	width: 40%;
+}
+.home-about-spacer {
+	width: 20%;
+}
+
+.home-photo-text-overlay {
+	position: absolute;
+	padding: 266px; 0;
+	right: 0;
+	left: 0;
+	text-align: center;
+	font-size: 50px;
+	color: #CCD;
+	background: rgba(0, 0, 0, 0.3);
+	box-shadow: inset 0 0 200px 20px black;
+}
+.photo-grid-bg {
+	width: 25%;
+	height: 200px;
+	float: left;
+}
+
+.home-pf-overlay a { /*general class for home page portfolio items with an overlay in front of an html background*/
+	color: inherit;
+	text-decoration: none;
+	border-bottom: 3px dashed #AAC;
+}
+.home-pf-overlay a:hover {
+	color: #FDD;
+	border-bottom: 3px dashed #B99;
+}

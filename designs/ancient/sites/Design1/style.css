@@ -1,0 +1,220 @@
+@import url(http://fonts.googleapis.com/css?family=Lato);
+body {
+	margin: 0;
+	background: #E5E5E5;
+	font-family: futura, avenir, Georgia, sans-serif;
+}
+
+.clearfix {
+	clear: both;
+}
+
+.wrap {
+	max-width: 1000px;
+	width: 85%;
+	margin: 0 auto;
+}
+
+.standout {
+	background: white;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+	transition: all ease 0.25s;
+	-webkit-transition: all ease 0.25s;
+}
+a:hover {
+	color: black;
+	text-decoration: none;
+}
+a:active {
+	color: black;
+	text-decoration: none;
+}
+article a:active {
+	color: black;
+	text-decoration: underline;
+}
+a:visited {
+	color: black;
+	text-decoration: none;
+}
+
+p {
+	font-family: avenir, "Lato", Georgia, sans-serif;
+}
+
+h1, h2, h3 {
+	text-align: center;
+}
+
+
+/*-----LISTINGS-----*/
+
+
+.list-half {
+	display: block;
+	width: 50%;
+	float: left;
+}
+.list-fifth {
+	display: block;
+	width: 20%;
+	float: left;
+}
+
+
+
+
+/*-----HEADER-----*/
+
+.header {
+	font-family: futura, avenir, "Lato", sans-serif;
+	padding: 20px 0;
+}
+.header a:hover {
+	color: #666;
+}
+.header a:active {
+	text-decoration: none;
+}
+.header ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+.header .list-fifth {
+	height: 50px;
+	text-align: center;
+	background: url("lightdot.png") repeat-x center;
+}
+.header .list-fifth a {
+	display: inline-block;
+	font-size: 16px;
+	margin: 13px 0;
+	background: #E5E5E5;
+	padding: 0 1em;
+}
+.header .list-fifth.head-logo a {
+	margin: 0;
+	font-size: 45px;
+}
+.header-portfolio-link {
+	margin: 1px;
+	text-align: center;
+	background: url("lightdot.png") repeat-y center;
+	padding: 30px 0 0 0;
+}
+.header-portfolio-link a {	
+	background: #E5E5E5;
+	padding: 10px;
+}
+
+
+
+
+
+.index-wrap {
+	height: 70%;
+	min-height: 500px;
+	margin-top: 10%;
+}
+.index-third {
+	width: 33.33%;
+	float: left;
+	height: 100%;
+}
+.index-third-inner {
+	margin: 20px;
+	padding: 20px;
+	/*
+	background: white;border: solid 1px #E5E5E5;
+	box-shadow: none;
+	transition: all 0.2s ease;
+	-webkit-transition: all 0.2s ease;*/
+}
+.index-third-inner:hover {
+	/*
+	border: solid 1px #CCC;
+	box-shadow: 3px 8px 10px -7px #999;*/
+}
+.index-third-inner img {
+	height: 200px;
+	width: 200px;
+	display: block;
+	margin: 0 auto;
+	padding: 10px 0;
+	transition: all 0.2s ease;
+	-webkit-transition: all 0.2s ease;
+}
+.index-third-inner:hover img {
+	width: 220px;
+	height: 220px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+
+/*-----INDEX STYLING-----*/
+
+article img {
+	max-width: 100%;
+}
+
+.main-post {
+	width: 48%;
+	float: left;
+	padding: 1%;
+}
+
+
+
+
+/*-----FOOTER-----*/
+
+.footer {
+	font-family: futura, avenir, "Lato", sans-serif;
+	padding: 20px 0;
+}
+.footer .first-half .footer-half-inner {
+	margin: 20px 10px 20px 0;
+}
+.footer .second-half .footer-half-inner {
+	margin: 20px 0 20px 10px;
+}
+.footer-half-inner {
+	height: 150px;
+}
+
+
+
+.footer-links > ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	color: inherit;
+}
+.footer-links > ul > li {
+	text-align: center;
+	display: inline-block;
+	color: inherit;
+	padding: 0 1em 0 0;
+}
+.footer-links li > a {
+	color: inherit;
+	text-shadow: 1px 1px 1px white;
+}
+.footer-links li > a:hover {
+	color: #444;
+}
+.footer-links {
+	color: #777;
+}
+.footer-helper {
+	background: url("point.png") no-repeat center;
+	background-size: 40px 20px;
+	height: 20px;
+	margin-bottom: -10px;
+}

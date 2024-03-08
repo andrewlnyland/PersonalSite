@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Graphical test #1</title>
+		<script src="script.js"></script>
+		<style type="text/css">
+			body {margin: 0; overflow: auto;}
+            #floater {
+                position: fixed;
+                top: 0;
+                right: 0;
+                background: rgba(255, 255, 255, 0.7);
+            }
+		</style>
+	</head>
+	<body onload="main();">
+		<canvas id="main-canvas"></canvas>
+        <div id="floater">
+            <input type="text" id="input1" value=""><br>
+            <input type="text" id="input2" value=""><br>
+            <input type="text" id="input3" value=""><br>
+            <input type="text" id="input4" value=""><br>
+            <input type="text" id="input5" value=""><br>
+            <button id="gobutton" onclick="redo()">Draw</button><br>
+            <span id="timedata"></span>
+        </div>
+	</body>
+</html>

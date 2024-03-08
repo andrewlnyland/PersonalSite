@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,400italic|Bitter|Hind');
+body {
+	margin: 0;
+	font-family: 'Open Sans', Georgia, sans-serif;
+	background: #EEE;
+}
+.clearfix {
+	clear: both;
+}
+#overlay {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: rgba(64, 64, 64, 0.8);
+	z-index: 9999;
+	display: none;
+	cursor: pointer;
+}
+/*---GENERAL---*/
+h2 {
+	font-size: 3em;
+}
+a, a:visited {
+	color: black;
+}
+
+
+/*---HEADER---*/
+header {
+	padding-left: 11em;
+	font-family: 'Bitter';
+}
+header h1 {
+	margin: 0;
+	padding-top: 1.5em;
+}
+header h1 > a {
+	text-decoration: none;
+}
+header a:hover {
+	color: #444;
+	transition: 0.3s color ease;
+}
+#main-logo {
+	background: url("/logo1d.png") no-repeat center center;
+	background-size: 6em;
+	width: 11em;
+	height: 8em;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#header-content {
+}
+.header-section {
+	width: 50%;
+	height: 8em;
+	float: left;
+}
+.header-section ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	float: right;
+	padding-right: 11%;
+	margin: 3em 0 0 0;
+}
+.header-section ul li {
+	float: left;
+	padding: 10px;
+}
+.header-section ul li a {
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.header-section ul li a:hover {
+	border-bottom: 1px dashed #444;
+}
+
+
+/*---SIDEBAR---*/
+#sidebar {
+	position: absolute;
+	width: 11em;
+	top: 8em;
+	left: 0;
+}
+#sidebar ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0 0 2em 0;
+}
+#sidebar ul li {
+	padding-left: 30px;
+	border-top: 1px solid #EEE;
+	border-bottom: 1px solid #EEE;
+}
+#sidebar ul li a {
+	text-decoration: none;
+	display: inline-block;
+	padding: 5px;
+	width: 100%;
+}
+#sidebar ul li:hover {
+	background: white;
+	border-top: 1px solid #CCC;
+	border-bottom: 1px solid #CCC;
+}
+
+
+
+article {
+	background: white;
+	margin-left: 11em;
+	padding: 20px 5%;
+	border-top: 1px solid #CCC;
+	border-bottom: 1px solid #CCC;
+	box-shadow: -1px 0 0 #CCC;
+}
+article img {
+	max-width: 100%;
+}
+article img.fullview {
+	cursor: pointer;
+}
+
+/*---FOOTER---*/
+.footer-slogan {
+	padding: 1em 5% 1em 35px;
+	color: #444;
+}
+.copyright {
+	float: right;
+}

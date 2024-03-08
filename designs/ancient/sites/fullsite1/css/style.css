@@ -1,0 +1,105 @@
+/* -----Written By Tyler French - tylerfrench.contact@gmail.com----- */
+/* -----------------Updated Sunday, March 30, 2014------------------ */
+
+
+
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@import url(http://fonts.googleapis.com/css?family=Francois+One);
+
+::selection {
+	color: white;
+	background: #444;
+}
+::-webkit-scrollbar {
+	width:10px;
+	height:10px;
+	cursor:pointer;
+}
+::-webkit-scrollbar-thumb {
+	width:8px;
+	height:10px;
+	border:1px solid #EEE;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	background: #AAA;
+	/*-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);*/
+}
+::-webkit-scrollbar-thumb:hover {
+	width:8px;
+	height:10px;
+	border:1px solid #EEE;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	background: #888;
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+::-webkit-scrollbar-track {
+	background: rgba(230,230,230, 0.6);
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+	cursor: hand;
+}
+
+body {
+	margin:0;
+	padding:0;
+	font-family:'Roboto Slab', Marion;
+	overflow-y:scroll;
+}
+h1 {
+	font-size:28px;
+	font-weight:normal;
+	-webkit-user-select:text;
+}
+h2 {
+	font-size:26px;
+	-webkit-user-select:text;
+}
+h3 {
+	font-size:24px;
+	-webkit-user-select:text;
+}
+h4 {
+	font-size:22px;
+	-webkit-user-select:text;
+}
+h5 {
+	font-weight:normal;
+	font-size:20px;
+	text-align:center;
+	-webkit-user-select:text;
+}
+h6 {
+	font-weight:normal;
+	font-size:18px;
+	text-align:center;
+	-webkit-user-select:text;
+}
+ul {
+	-webkit-user-select:text;
+}
+p {
+	font-family:'Roboto Slab', Marion;
+	font-size:16px;
+}
+a {
+	color:black;
+	text-decoration:underline;
+}
+a:link {
+	color:#00AA00;
+	text-decoration:none;
+}
+a:hover {
+	color:#0000AA;
+	text-decoration:underline;
+}
+a:active {
+	color:black;
+	text-decoration:underline;
+}
+a:visited {
+	color:#00AA00;
+	text-decoration:none;
+}

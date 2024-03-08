@@ -1,0 +1,58 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
+
+body {
+	margin: 0;
+	background: #234567;
+	color: white;
+	font-family: 'Open Sans';
+	overflow: hidden;
+}
+.content {
+	position: absolute;
+	padding: 0 10px;
+}
+.about {
+	width: 80%;
+	padding: 10px 10%;
+}
+#controls {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	background: rgba(255,255,255,.6);
+	padding: 3px 7px;
+	box-shadow: 0 0 10px #444;
+	color: black;
+}
+.clearfix {
+	clear: both;
+}
+a {
+	color: #ff9a00;
+	z-index: 9998;
+}
+
+h3 {
+	z-index: 9998;
+}
+
+#bgcanvas {
+	position:fixed;
+	top:0;
+	left:0;
+	z-index: -1;
+}
+
+#fgcanvas {
+	position:fixed;
+	top:0;
+	left:0;
+	z-index: 1;
+}
+
+#datacanvas {
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 1;
+}
